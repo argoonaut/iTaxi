@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C0DB629AFEA1D00BFA06A /* LocationManager.swift */; };
+		40D7F79129AFA96000611CDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79029AFA96000611CDF /* HomeView.swift */; };
+		40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */; };
 		40F925F429AF508200434F98 /* iTaxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F925F329AF508200434F98 /* iTaxiApp.swift */; };
-		40F925F629AF508200434F98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F925F529AF508200434F98 /* ContentView.swift */; };
 		40F925F829AF508300434F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F925F729AF508300434F98 /* Assets.xcassets */; };
 		40F925FB29AF508300434F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F925FA29AF508300434F98 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		406C0DB629AFEA1D00BFA06A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		40D7F79029AFA96000611CDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiMapViewRepresentable.swift; sourceTree = "<group>"; };
 		40F925F029AF508200434F98 /* iTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F925F329AF508200434F98 /* iTaxiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiApp.swift; sourceTree = "<group>"; };
-		40F925F529AF508200434F98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40F925F729AF508300434F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F925FA29AF508300434F98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40D7F78929AFA88700611CDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40D7F78A29AFA88E00611CDF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				406C0DB629AFEA1D00BFA06A /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		40D7F78B29AFA89500611CDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40D7F78C29AFA89800611CDF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				40D7F78F29AFA91B00611CDF /* ViewModel */,
+				40D7F78E29AFA91800611CDF /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		40D7F78D29AFA89A00611CDF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				40F925F329AF508200434F98 /* iTaxiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		40D7F78E29AFA91800611CDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40D7F79029AFA96000611CDF /* HomeView.swift */,
+				40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40D7F78F29AFA91B00611CDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		40F925E729AF508200434F98 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +110,11 @@
 		40F925F229AF508200434F98 /* iTaxi */ = {
 			isa = PBXGroup;
 			children = (
-				40F925F329AF508200434F98 /* iTaxiApp.swift */,
-				40F925F529AF508200434F98 /* ContentView.swift */,
+				40D7F78D29AFA89A00611CDF /* App */,
+				40D7F78C29AFA89800611CDF /* Core */,
+				40D7F78B29AFA89500611CDF /* Extensions */,
+				40D7F78A29AFA88E00611CDF /* Managers */,
+				40D7F78929AFA88700611CDF /* Models */,
 				40F925F729AF508300434F98 /* Assets.xcassets */,
 				40F925F929AF508300434F98 /* Preview Content */,
 			);
@@ -137,8 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F925F629AF508200434F98 /* ContentView.swift in Sources */,
+				406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */,
+				40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */,
 				40F925F429AF508200434F98 /* iTaxiApp.swift in Sources */,
+				40D7F79129AFA96000611CDF /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +334,7 @@
 				DEVELOPMENT_TEAM = XA4XDJAY3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to acess your location to find you nearby drivers and riders";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +364,7 @@
 				DEVELOPMENT_TEAM = XA4XDJAY3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to acess your location to find you nearby drivers and riders";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
