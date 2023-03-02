@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C0DB629AFEA1D00BFA06A /* LocationManager.swift */; };
+		40A357A729B11FB000931DCD /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A357A629B11FB000931DCD /* LocationSearchActivationView.swift */; };
+		40A357A929B1215D00931DCD /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A357A829B1215D00931DCD /* MapViewActionButton.swift */; };
+		40A357AB29B1225500931DCD /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A357AA29B1225500931DCD /* LocationSearchView.swift */; };
+		40A357AD29B1256500931DCD /* LocationSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A357AC29B1256500931DCD /* LocationSearchResultCell.swift */; };
 		40D7F79129AFA96000611CDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79029AFA96000611CDF /* HomeView.swift */; };
 		40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */; };
 		40F925F429AF508200434F98 /* iTaxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F925F329AF508200434F98 /* iTaxiApp.swift */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		406C0DB629AFEA1D00BFA06A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		40A357A629B11FB000931DCD /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
+		40A357A829B1215D00931DCD /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewActionButton.swift; sourceTree = "<group>"; };
+		40A357AA29B1225500931DCD /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
+		40A357AC29B1256500931DCD /* LocationSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultCell.swift; sourceTree = "<group>"; };
 		40D7F79029AFA96000611CDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiMapViewRepresentable.swift; sourceTree = "<group>"; };
 		40F925F029AF508200434F98 /* iTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +44,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40A357A229B11EFC00931DCD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				40D7F78F29AFA91B00611CDF /* ViewModel */,
+				40D7F78E29AFA91800611CDF /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		40A357A329B11F2400931DCD /* LocationSearch */ = {
+			isa = PBXGroup;
+			children = (
+				40A357A429B11F5400931DCD /* ViewModel */,
+				40A357A529B11F5F00931DCD /* Views */,
+			);
+			path = LocationSearch;
+			sourceTree = "<group>";
+		};
+		40A357A429B11F5400931DCD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		40A357A529B11F5F00931DCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40A357A629B11FB000931DCD /* LocationSearchActivationView.swift */,
+				40A357AA29B1225500931DCD /* LocationSearchView.swift */,
+				40A357AC29B1256500931DCD /* LocationSearchResultCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		40D7F78929AFA88700611CDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +104,8 @@
 		40D7F78C29AFA89800611CDF /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				40D7F78F29AFA91B00611CDF /* ViewModel */,
-				40D7F78E29AFA91800611CDF /* Views */,
+				40A357A329B11F2400931DCD /* LocationSearch */,
+				40A357A229B11EFC00931DCD /* Home */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -80,6 +123,7 @@
 			children = (
 				40D7F79029AFA96000611CDF /* HomeView.swift */,
 				40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */,
+				40A357A829B1215D00931DCD /* MapViewActionButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,10 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A357AB29B1225500931DCD /* LocationSearchView.swift in Sources */,
 				406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */,
+				40A357A929B1215D00931DCD /* MapViewActionButton.swift in Sources */,
 				40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */,
 				40F925F429AF508200434F98 /* iTaxiApp.swift in Sources */,
 				40D7F79129AFA96000611CDF /* HomeView.swift in Sources */,
+				40A357A729B11FB000931DCD /* LocationSearchActivationView.swift in Sources */,
+				40A357AD29B1256500931DCD /* LocationSearchResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
