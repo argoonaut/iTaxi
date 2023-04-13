@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RideRequestView: View {
+    
+    @State private var selectedRideType: RideType = .uberX
+    
     var body: some View {
         VStack {
             Capsule()
@@ -15,9 +18,9 @@ struct RideRequestView: View {
                 .frame(width: 48, height: 6)
                 .padding(.top, 8)
             
-            // trip info view
+            // MARK: - Trip info view
             HStack {
-                // indicator view
+                // MARK: - Indicator view
                 VStack {
                     Circle()
                         .fill(Color(.systemGray3))
@@ -64,7 +67,7 @@ struct RideRequestView: View {
             
             Divider()
             
-            // ride type selection view
+            // MARK: - Ride type selection view
             Text("SUGGESTED RIDES")
                 .font(.subheadline)
                 .fontWeight(.semibold)
@@ -74,25 +77,32 @@ struct RideRequestView: View {
             
             ScrollView(.horizontal) {
                 HStack(spacing: 12) {
-                    ForEach(0 ..< 3, id: \.self) { _ in
+                    ForEach(RideType.allCases) { type in
                         VStack(alignment: .leading) {
-                            Image("uber-x")
+                            Image(type.imageName)
                                 .resizable()
                                 .scaledToFit()
                             
-                            VStack(spacing: 4) {
+                            VStack(alignment: .leading, spacing: 4) {
                                 
-                                Text("UberX")
+                                Text(type.description)
                                     .font(.system(size: 14, weight: .semibold))
                                 
                                 Text("$22.04")
                                     .font(.system(size: 14, weight: .semibold))
                             }
-                            .padding(8)
+                            .padding()
                         }
                         .frame(width: 112, height: 140)
-                        .background(Color(.systemGroupedBackground))
+                        .foregroundColor(type == selectedRideType ? .white : .black)
+                        .background(Color(type == selectedRideType ? .systemBlue : .systemGroupedBackground))
+                        .scaleEffect(type == selectedRideType ? 1.2 : 1.0)
                         .cornerRadius(10)
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                selectedRideType = type
+                            }
+                        }
 
                     }
                 }
@@ -102,7 +112,7 @@ struct RideRequestView: View {
             Divider()
                 .padding(.vertical, 8)
             
-            // payment option view
+            //MARK: - Payment option view
             HStack(spacing: 12) {
                 Text("Visa")
                     .font(.subheadline)
@@ -127,7 +137,7 @@ struct RideRequestView: View {
             .cornerRadius(10)
             .padding(.horizontal)
             
-            // request ride button
+            // MARK: - Request ride button
             Button {
                 
             } label: {
