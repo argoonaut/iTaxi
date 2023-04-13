@@ -28,15 +28,6 @@ struct iTaxiMapViewRepresentable: UIViewRepresentable {
     func updateUIView(_ uiView: UIViewType, context: Context) {
         print("DEBUG: Map state is \(mapState)")
         
-        /*if let coordinate = locationViewModel.selectedLocationCoordinate {
-            context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
-            context.coordinator.configurePolyline(withDestinationCoordinate: coordinate)
-        }
-        
-        if mapState == .noInput {
-            context.coordinator.clearMapViewAndRecenterOnUserLocation()
-        }*/
-        
         switch mapState {
         case .noInput:
             context.coordinator.clearMapViewAndRecenterOnUserLocation()
