@@ -18,6 +18,8 @@
 		40A357AB29B1225500931DCD /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A357AA29B1225500931DCD /* LocationSearchView.swift */; };
 		40A357AD29B1256500931DCD /* LocationSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A357AC29B1256500931DCD /* LocationSearchResultCell.swift */; };
 		40A7E6E529EF0F0800F52EE2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6E429EF0F0800F52EE2 /* Color.swift */; };
+		40A7E6EA29EF13F200F52EE2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6E929EF13F200F52EE2 /* LoginView.swift */; };
+		40A7E6EC29EF140A00F52EE2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6EB29EF140A00F52EE2 /* RegistrationView.swift */; };
 		40CFCA9729D6070B008BCACC /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFCA9629D6070B008BCACC /* MapViewState.swift */; };
 		40D7F79129AFA96000611CDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79029AFA96000611CDF /* HomeView.swift */; };
 		40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */; };
@@ -38,6 +40,8 @@
 		40A357AA29B1225500931DCD /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
 		40A357AC29B1256500931DCD /* LocationSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultCell.swift; sourceTree = "<group>"; };
 		40A7E6E429EF0F0800F52EE2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		40A7E6E929EF13F200F52EE2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		40A7E6EB29EF140A00F52EE2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		40CFCA9629D6070B008BCACC /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		40D7F79029AFA96000611CDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiMapViewRepresentable.swift; sourceTree = "<group>"; };
@@ -102,6 +106,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		40A7E6E629EF137E00F52EE2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				40A7E6E829EF13BB00F52EE2 /* ViewModels */,
+				40A7E6E729EF13B700F52EE2 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		40A7E6E729EF13B700F52EE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				40A7E6E929EF13F200F52EE2 /* LoginView.swift */,
+				40A7E6EB29EF140A00F52EE2 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		40A7E6E829EF13BB00F52EE2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		40D7F78929AFA88700611CDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +161,7 @@
 		40D7F78C29AFA89800611CDF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				40A7E6E629EF137E00F52EE2 /* Authentication */,
 				407B0ABC29E8781700AAC475 /* Trips */,
 				40A357A329B11F2400931DCD /* LocationSearch */,
 				40A357A229B11EFC00931DCD /* Home */,
@@ -277,6 +307,7 @@
 				406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */,
 				407B0ABE29E8783B00AAC475 /* RideRequestView.swift in Sources */,
 				4090CE0029EEFC8200E1B4A8 /* Double.swift in Sources */,
+				40A7E6EC29EF140A00F52EE2 /* RegistrationView.swift in Sources */,
 				40CFCA9729D6070B008BCACC /* MapViewState.swift in Sources */,
 				40A357A929B1215D00931DCD /* MapViewActionButton.swift in Sources */,
 				40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */,
@@ -286,6 +317,7 @@
 				4090CE0229EEFEAB00E1B4A8 /* iTaxiLocation.swift in Sources */,
 				40A357A729B11FB000931DCD /* LocationSearchActivationView.swift in Sources */,
 				40A357AD29B1256500931DCD /* LocationSearchResultCell.swift in Sources */,
+				40A7E6EA29EF13F200F52EE2 /* LoginView.swift in Sources */,
 				407B0AC029E88DA000AAC475 /* RideType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
