@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>275466620154-71uifchf5lqvtebv4r1jmbcvio054fre.apps.googleusercontent.com</string>
+	<string>958903199686-g4a0q4d8ttsakpj6tumhbgpc0t86d80r.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.275466620154-71uifchf5lqvtebv4r1jmbcvio054fre</string>
+	<string>com.googleusercontent.apps.958903199686-g4a0q4d8ttsakpj6tumhbgpc0t86d80r</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCQjfJ2Xd0V2PoUh3qYJQeWwvdvPzvYyYY</string>
+	<string>AIzaSyD27ZSHJYWc3mFktFrsnC0rADm4dJkMr_k</string>
 	<key>GCM_SENDER_ID</key>
-	<string>275466620154</string>
+	<string>958903199686</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.argonautts.iTaxi</string>
 	<key>PROJECT_ID</key>
-	<string>itaxi-68500</string>
+	<string>itaxi-b0398</string>
 	<key>STORAGE_BUCKET</key>
-	<string>itaxi-68500.appspot.com</string>
+	<string>itaxi-b0398.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:275466620154:ios:f69fa41c8eb1307e60cd43</string>
+	<string>1:958903199686:ios:1d20e60e0a98376a8634c7</string>
 </dict>
 </plist>
