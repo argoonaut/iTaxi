@@ -38,41 +38,16 @@ struct LoginView: View {
                 
                 VStack(spacing: 32) {
                     // Input field 1
-                    VStack(alignment: .leading, spacing: 12) {
-                        // Title
-                        Text("Email Address")
-                            .foregroundColor(.white)
-                            .fontWeight(.semibold)
-                            .font(.footnote)
-                        
-                        // Text field
-                        TextField("Mail", text: $email) //name@example.com
-                            .foregroundColor(.white)
-                        
-                        // Divider
-                        Rectangle()
-                            .foregroundColor(Color(.init(white: 1, alpha: 0.3)))
-                            .frame(width: UIScreen.main.bounds.width - 32,
-                                   height: 0.7)
-                    }
+                    CustomInputFields(text: $email,
+                                      title: "Email Address",
+                                      placeholder: "name@example.com")
                     
                     // Input field 2
-                    VStack(alignment: .leading, spacing: 12) {
-                        // Title
-                        Text("Password")
-                            .foregroundColor(.white)
-                            .fontWeight(.semibold)
-                            .font(.footnote)
-                        
-                        // Text field
-                        TextField("Enter your password", text: $password)
-                            .foregroundColor(.white)
-                        
-                        // Divider
-                        Rectangle()
-                            .foregroundColor(Color(.init(white: 1, alpha: 0.3)))
-                            .frame(width: UIScreen.main.bounds.width - 32, height: 0.7)
-                    }
+                    CustomInputFields(text: $password,
+                                      title: "Password",
+                                      placeholder: "Enter your password",
+                                      isSecureField: true)
+                    
                     Button {
                         
                     } label: {
@@ -138,8 +113,8 @@ struct LoginView: View {
                         Image(systemName: "arrow.right")
                             .foregroundColor(.black)
                     }
+                    .frame(width: UIScreen.main.bounds.width - 32, height: 50)
                 }
-                .frame(width: UIScreen.main.bounds.width - 32, height: 50)
                 .background(Color.white)
                 .cornerRadius(10)
 
@@ -159,8 +134,6 @@ struct LoginView: View {
                     }
                     .foregroundColor(.white)
                 }
-
-                
             }
         }
     }

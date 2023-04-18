@@ -20,6 +20,7 @@
 		40A7E6E529EF0F0800F52EE2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6E429EF0F0800F52EE2 /* Color.swift */; };
 		40A7E6EA29EF13F200F52EE2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6E929EF13F200F52EE2 /* LoginView.swift */; };
 		40A7E6EC29EF140A00F52EE2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6EB29EF140A00F52EE2 /* RegistrationView.swift */; };
+		40A7E6EF29EF357600F52EE2 /* CustomInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6EE29EF357600F52EE2 /* CustomInputFields.swift */; };
 		40CFCA9729D6070B008BCACC /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFCA9629D6070B008BCACC /* MapViewState.swift */; };
 		40D7F79129AFA96000611CDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79029AFA96000611CDF /* HomeView.swift */; };
 		40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */; };
@@ -42,6 +43,7 @@
 		40A7E6E429EF0F0800F52EE2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		40A7E6E929EF13F200F52EE2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		40A7E6EB29EF140A00F52EE2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		40A7E6EE29EF357600F52EE2 /* CustomInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFields.swift; sourceTree = "<group>"; };
 		40CFCA9629D6070B008BCACC /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		40D7F79029AFA96000611CDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiMapViewRepresentable.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		40A7E6ED29EF352E00F52EE2 /* ReusableIteams */ = {
+			isa = PBXGroup;
+			children = (
+				40A7E6EE29EF357600F52EE2 /* CustomInputFields.swift */,
+			);
+			path = ReusableIteams;
+			sourceTree = "<group>";
+		};
 		40D7F78929AFA88700611CDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 		40F925F229AF508200434F98 /* iTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				40A7E6ED29EF352E00F52EE2 /* ReusableIteams */,
 				40D7F78D29AFA89A00611CDF /* App */,
 				40D7F78C29AFA89800611CDF /* Core */,
 				40D7F78B29AFA89500611CDF /* Extensions */,
@@ -318,6 +329,7 @@
 				40A357A729B11FB000931DCD /* LocationSearchActivationView.swift in Sources */,
 				40A357AD29B1256500931DCD /* LocationSearchResultCell.swift in Sources */,
 				40A7E6EA29EF13F200F52EE2 /* LoginView.swift in Sources */,
+				40A7E6EF29EF357600F52EE2 /* CustomInputFields.swift in Sources */,
 				407B0AC029E88DA000AAC475 /* RideType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
