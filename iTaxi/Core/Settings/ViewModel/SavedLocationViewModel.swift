@@ -2,7 +2,7 @@
 //  SavedLocationViewModel.swift
 //  iTaxi
 //
-//  Created by Alexandr Kozin on 19.04.2023.
+//  Created by Alexander Kozin on 19.04.2023.
 //
 
 import Foundation
@@ -36,6 +36,23 @@ enum SavedLocationViewModel: Int, CaseIterable, Identifiable {
         switch self {
         case .home: return "homeLocation"
         case .work: return "workLocation"
+        }
+    }
+    
+    func subtitle(forUser user: User) -> String {
+        switch self {
+        case .home:
+            if let homeLocation = user.homeLocation {
+                return homeLocation.title
+            } else {
+                return "Add Home"
+            }
+        case .work:
+            if let workLocation = user.workLocation {
+                return workLocation.title
+            } else {
+                return "Add Work"
+            }
         }
     }
     

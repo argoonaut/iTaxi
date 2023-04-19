@@ -2,7 +2,7 @@
 //  SavedLocationSearchView.swift
 //  iTaxi
 //
-//  Created by Alexandr Kozin on 19.04.2023.
+//  Created by Alexander Kozin on 19.04.2023.
 //
 
 import SwiftUI
@@ -16,28 +16,21 @@ struct SavedLocationSearchView: View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 16) {
-                Image(systemName: "arrow.left")
-                    .font(.title2)
-                    .imageScale(.medium)
-                    .padding(.leading)
-                
-                TextField("Search for a location",
-                          text: $viewModel.queryFragment)
-                    .frame(height: 32)
-                    .padding(.leading)
-                    .background(Color(.systemGray5))
-                    .padding(.trailing)
-            }
-            .padding(.top)
+            TextField("Search for a location...",
+                      text: $viewModel.queryFragment)
+                .frame(height: 32)
+                .padding(.leading)
+                .background(Color(.systemGray5))
+                .padding()
             
             Spacer()
-            //viewmodel fix
+
             LocationSearchResultsView(viewModel: viewModel,
                                       config: .saveLocation(config))
             
         }
         .navigationTitle(config.subtitle)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
