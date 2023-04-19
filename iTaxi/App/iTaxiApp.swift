@@ -22,6 +22,7 @@ struct iTaxiApp: App {
     
     @StateObject var locationViewModel = LocationSearchViewModel()
     @StateObject var authViewModel = AuthViewModel()
+    @StateObject var homeViewModel = HomeViewModel()
     
     // Register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
@@ -31,6 +32,7 @@ struct iTaxiApp: App {
             HomeView()
                 .environmentObject(locationViewModel)
                 .environmentObject(authViewModel)
+                .environmentObject(homeViewModel)
         }
     }
 }

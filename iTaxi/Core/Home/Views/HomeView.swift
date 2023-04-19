@@ -14,7 +14,7 @@ struct HomeView: View {
     
     @EnvironmentObject var locationViewModel: LocationSearchViewModel
     @EnvironmentObject var authViewModel: AuthViewModel
-    @StateObject var homeViewModel = HomeViewModel()
+    @EnvironmentObject var homeViewModel: HomeViewModel
     
     var body: some View {
         Group {
