@@ -8,6 +8,11 @@
 import Foundation
 import MapKit
 
+enum LocationResultsViewConfig {
+    case ride
+    case saveLocation
+}
+
 class LocationSearchViewModel: NSObject, ObservableObject {
     
     // MARK: - Properties
@@ -23,6 +28,9 @@ class LocationSearchViewModel: NSObject, ObservableObject {
         }
     }
     private let searchCompleter = MKLocalSearchCompleter()
+    var userLocation: CLLocationCoordinate2D?
+    
+    // MARK: - Lifecycle
     
     override init() {
         super.init()
@@ -30,22 +38,26 @@ class LocationSearchViewModel: NSObject, ObservableObject {
         searchCompleter.queryFragment = queryFragment
     }
     
-    var userLocation: CLLocationCoordinate2D?
-    
     // MARK: - Helpers
     
-    func selectLocation(_ localSearch: MKLocalSearchCompletion) {
-        locationSearch(forlocalSearchCompletion: localSearch) { response, error in
-            
-            if let error = error {
-                print("DEBUG: Location search failed with error \(error.localizedDescription)")
+    func selectLocation(_ localSearch: MKLocalSearchCompletion, config: LocationResultsViewConfig) {
+        switch config {
+        case .ride:
+            locationSearch(forlocalSearchCompletion: localSearch) { response, error in
+                
+                if let error = error {
+                    print("DEBUG: Location search failed with error \(error.localizedDescription)")
+                }
+                
+                guard let item = response?.mapItems.first else { return }
+                let coordinate = item.placemark.coordinate
+                self.selectediTaxiLocation = iTaxiLocation(title: localSearch.title, coordinate: coordinate)
+                print("DEBUG: Location coordinates \(coordinate)")
             }
-            
-            guard let item = response?.mapItems.first else { return }
-            let coordinate = item.placemark.coordinate
-            self.selectediTaxiLocation = iTaxiLocation(title: localSearch.title, coordinate: coordinate)
-            print("DEBUG: Location coordinates \(coordinate)")
+        case .saveLocation:
+            print("DEBUG: Saved location here..")
         }
+        
     }
     
     func locationSearch(forlocalSearchCompletion localSearch: MKLocalSearchCompletion, completion: @escaping MKLocalSearch.CompletionHandler) {
