@@ -22,6 +22,7 @@
 		4088B72729F067EC00DDDCCA /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72629F067EC00DDDCCA /* SavedLocation.swift */; };
 		4088B72929F073BF00DDDCCA /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72829F073BF00DDDCCA /* DeveloperPreview.swift */; };
 		4088B72B29F0835800DDDCCA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72A29F0835800DDDCCA /* HomeViewModel.swift */; };
+		4088B72D29F0918500DDDCCA /* DriverAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72C29F0918500DDDCCA /* DriverAnnotation.swift */; };
 		408D8C8529B3FB180037DA73 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D8C8429B3FB180037DA73 /* LocationSearchViewModel.swift */; };
 		4090CE0029EEFC8200E1B4A8 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090CDFF29EEFC8200E1B4A8 /* Double.swift */; };
 		4090CE0229EEFEAB00E1B4A8 /* iTaxiLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090CE0129EEFEAB00E1B4A8 /* iTaxiLocation.swift */; };
@@ -64,6 +65,7 @@
 		4088B72629F067EC00DDDCCA /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
 		4088B72829F073BF00DDDCCA /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		4088B72A29F0835800DDDCCA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4088B72C29F0918500DDDCCA /* DriverAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverAnnotation.swift; sourceTree = "<group>"; };
 		408D8C8429B3FB180037DA73 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 		4090CDFF29EEFC8200E1B4A8 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		4090CE0129EEFEAB00E1B4A8 /* iTaxiLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiLocation.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				4090CE0129EEFEAB00E1B4A8 /* iTaxiLocation.swift */,
 				40A7E6FE29EF549100F52EE2 /* User.swift */,
 				4088B72629F067EC00DDDCCA /* SavedLocation.swift */,
+				4088B72C29F0918500DDDCCA /* DriverAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				40A7E6EC29EF140A00F52EE2 /* RegistrationView.swift in Sources */,
 				40A7E6FD29EF463100F52EE2 /* AuthViewModel.swift in Sources */,
 				4088B72529F0535B00DDDCCA /* LocationSearchResultsView.swift in Sources */,
+				4088B72D29F0918500DDDCCA /* DriverAnnotation.swift in Sources */,
 				4088B72129F041DE00DDDCCA /* SavedLocationViewModel.swift in Sources */,
 				40CFCA9729D6070B008BCACC /* MapViewState.swift in Sources */,
 				4088B71F29F0385500DDDCCA /* SettingsRowView.swift in Sources */,
