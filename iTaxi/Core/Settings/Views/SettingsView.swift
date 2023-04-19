@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    private let user: User
+    @EnvironmentObject var viewModel: AuthViewModel
+    
+    init(user: User) {
+        self.user = user
+    }
+    
     var body: some View {
         VStack {
             List {
@@ -21,10 +29,10 @@ struct SettingsView: View {
                             .frame(width: 64, height: 64)
                         
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("Alexander Kozin")
+                            Text(user.fullname)
                                 .font(.system(size: 16, weight: .semibold))
                             
-                            Text("sasha_kozin2020@mail.ru")
+                            Text(user.email)
                                 .font(.system(size: 14))
                                 .accentColor(Color.theme.primaryTextColor)
                                 .opacity(0.77)
@@ -37,6 +45,7 @@ struct SettingsView: View {
                             .font(.title2)
                             .foregroundColor(.gray)
                     }
+                    .padding(8)
                 }
                 
                 Section("Favorites") {
@@ -67,14 +76,23 @@ struct SettingsView: View {
                     SettingsRowView(imageName: "arrow.left.circle.fill",
                                     title: "Sign Out",
                                     tintColor: Color(.systemRed))
+                    .onTapGesture {
+                        viewModel.signout()
+                    }
                 }
             }
         }
+        .navigationTitle("Settings")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        NavigationStack {
+            SettingsView(user: User(fullname: "Alexander Kozin",
+                                    email: "sasha_kozin2020@mail.ru",
+                                    uid: "1234567"))
+        }
     }
 }
