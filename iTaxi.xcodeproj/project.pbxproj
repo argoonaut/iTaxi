@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4055A41B29EFF4D900CAB6C6 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A41A29EFF4D900CAB6C6 /* SideMenuView.swift */; };
+		4055A41D29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A41C29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift */; };
+		4055A41F29EFF8ED00CAB6C6 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A41E29EFF8ED00CAB6C6 /* SideMenuOptionView.swift */; };
 		406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406C0DB629AFEA1D00BFA06A /* LocationManager.swift */; };
 		407B0ABE29E8783B00AAC475 /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B0ABD29E8783B00AAC475 /* RideRequestView.swift */; };
 		407B0AC029E88DA000AAC475 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B0ABF29E88DA000AAC475 /* RideType.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4055A41A29EFF4D900CAB6C6 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		4055A41C29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionViewModel.swift; sourceTree = "<group>"; };
+		4055A41E29EFF8ED00CAB6C6 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		406C0DB629AFEA1D00BFA06A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		407B0ABD29E8783B00AAC475 /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 		407B0ABF29E88DA000AAC475 /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
@@ -78,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4055A41729EFF23300CAB6C6 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4055A41829EFF4AB00CAB6C6 /* ViewModel */,
+				4055A41929EFF4B500CAB6C6 /* Views */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		4055A41829EFF4AB00CAB6C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4055A41C29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4055A41929EFF4B500CAB6C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4055A41A29EFF4D900CAB6C6 /* SideMenuView.swift */,
+				4055A41E29EFF8ED00CAB6C6 /* SideMenuOptionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		407B0ABC29E8781700AAC475 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +219,7 @@
 		40D7F78C29AFA89800611CDF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4055A41729EFF23300CAB6C6 /* SideMenu */,
 				40A7E6E629EF137E00F52EE2 /* Authentication */,
 				407B0ABC29E8781700AAC475 /* Trips */,
 				40A357A329B11F2400931DCD /* LocationSearch */,
@@ -343,6 +376,7 @@
 				408D8C8529B3FB180037DA73 /* LocationSearchViewModel.swift in Sources */,
 				40A357AB29B1225500931DCD /* LocationSearchView.swift in Sources */,
 				406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */,
+				4055A41D29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift in Sources */,
 				407B0ABE29E8783B00AAC475 /* RideRequestView.swift in Sources */,
 				4090CE0029EEFC8200E1B4A8 /* Double.swift in Sources */,
 				40A7E6EC29EF140A00F52EE2 /* RegistrationView.swift in Sources */,
@@ -352,9 +386,11 @@
 				40A357A929B1215D00931DCD /* MapViewActionButton.swift in Sources */,
 				40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */,
 				40A7E6E529EF0F0800F52EE2 /* Color.swift in Sources */,
+				4055A41F29EFF8ED00CAB6C6 /* SideMenuOptionView.swift in Sources */,
 				40F925F429AF508200434F98 /* iTaxiApp.swift in Sources */,
 				40D7F79129AFA96000611CDF /* HomeView.swift in Sources */,
 				4090CE0229EEFEAB00E1B4A8 /* iTaxiLocation.swift in Sources */,
+				4055A41B29EFF4D900CAB6C6 /* SideMenuView.swift in Sources */,
 				40A357A729B11FB000931DCD /* LocationSearchActivationView.swift in Sources */,
 				40A357AD29B1256500931DCD /* LocationSearchResultCell.swift in Sources */,
 				40A7E6EA29EF13F200F52EE2 /* LoginView.swift in Sources */,

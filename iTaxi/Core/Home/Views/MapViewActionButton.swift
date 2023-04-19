@@ -34,7 +34,8 @@ struct MapViewActionButton: View {
     func actionForState(_ state: MapViewState) {
         switch state {
         case .noInput:
-            authViewModel.signout()
+            break
+//            authViewModel.signout()
         case .searchingForLocation:
             mapState = .noInput
         case .locationSelected, .polylineAdded:
@@ -49,8 +50,6 @@ struct MapViewActionButton: View {
             return "line.3.horizontal"
         case .searchingForLocation, .locationSelected, .polylineAdded:
             return "arrow.left"
-        default:
-            return "line.3.horizontal"
         }
     }
 }
