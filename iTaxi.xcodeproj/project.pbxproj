@@ -19,6 +19,7 @@
 		4088B72129F041DE00DDDCCA /* SavedLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72029F041DE00DDDCCA /* SavedLocationViewModel.swift */; };
 		4088B72329F0473900DDDCCA /* SavedLocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72229F0473900DDDCCA /* SavedLocationSearchView.swift */; };
 		4088B72529F0535B00DDDCCA /* LocationSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72429F0535B00DDDCCA /* LocationSearchResultsView.swift */; };
+		4088B72729F067EC00DDDCCA /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088B72629F067EC00DDDCCA /* SavedLocation.swift */; };
 		408D8C8529B3FB180037DA73 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D8C8429B3FB180037DA73 /* LocationSearchViewModel.swift */; };
 		4090CE0029EEFC8200E1B4A8 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090CDFF29EEFC8200E1B4A8 /* Double.swift */; };
 		4090CE0229EEFEAB00E1B4A8 /* iTaxiLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090CE0129EEFEAB00E1B4A8 /* iTaxiLocation.swift */; };
@@ -58,6 +59,7 @@
 		4088B72029F041DE00DDDCCA /* SavedLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationViewModel.swift; sourceTree = "<group>"; };
 		4088B72229F0473900DDDCCA /* SavedLocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationSearchView.swift; sourceTree = "<group>"; };
 		4088B72429F0535B00DDDCCA /* LocationSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultsView.swift; sourceTree = "<group>"; };
+		4088B72629F067EC00DDDCCA /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
 		408D8C8429B3FB180037DA73 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 		4090CDFF29EEFC8200E1B4A8 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		4090CE0129EEFEAB00E1B4A8 /* iTaxiLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiLocation.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				407B0ABF29E88DA000AAC475 /* RideType.swift */,
 				4090CE0129EEFEAB00E1B4A8 /* iTaxiLocation.swift */,
 				40A7E6FE29EF549100F52EE2 /* User.swift */,
+				4088B72629F067EC00DDDCCA /* SavedLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				4088B71F29F0385500DDDCCA /* SettingsRowView.swift in Sources */,
 				4088B71929F0348E00DDDCCA /* SettingsView.swift in Sources */,
 				40A7E6FF29EF549100F52EE2 /* User.swift in Sources */,
+				4088B72729F067EC00DDDCCA /* SavedLocation.swift in Sources */,
 				40A357A929B1215D00931DCD /* MapViewActionButton.swift in Sources */,
 				40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */,
 				40A7E6E529EF0F0800F52EE2 /* Color.swift in Sources */,
