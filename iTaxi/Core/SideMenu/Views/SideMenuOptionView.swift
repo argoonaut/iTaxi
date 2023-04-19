@@ -2,7 +2,7 @@
 //  SideMenuOptionView.swift
 //  iTaxi
 //
-//  Created by Alexandr Kozin on 19.04.2023.
+//  Created by Alexander Kozin on 19.04.2023.
 //
 
 import SwiftUI
