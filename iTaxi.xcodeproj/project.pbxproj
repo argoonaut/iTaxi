@@ -40,6 +40,7 @@
 		40A7E6FB29EF41FB00F52EE2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 40A7E6FA29EF41FB00F52EE2 /* FirebaseStorage */; };
 		40A7E6FD29EF463100F52EE2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6FC29EF463100F52EE2 /* AuthViewModel.swift */; };
 		40A7E6FF29EF549100F52EE2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6FE29EF549100F52EE2 /* User.swift */; };
+		40BE395629F1AB7100F2A26D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE395529F1AB7100F2A26D /* UserService.swift */; };
 		40CFCA9729D6070B008BCACC /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFCA9629D6070B008BCACC /* MapViewState.swift */; };
 		40D7F79129AFA96000611CDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79029AFA96000611CDF /* HomeView.swift */; };
 		40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */; };
@@ -79,6 +80,7 @@
 		40A7E6EE29EF357600F52EE2 /* CustomInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFields.swift; sourceTree = "<group>"; };
 		40A7E6FC29EF463100F52EE2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		40A7E6FE29EF549100F52EE2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40BE395529F1AB7100F2A26D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		40CFCA9629D6070B008BCACC /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		40D7F79029AFA96000611CDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiMapViewRepresentable.swift; sourceTree = "<group>"; };
@@ -237,6 +239,14 @@
 			path = ReusableIteams;
 			sourceTree = "<group>";
 		};
+		40BE395429F1AB5300F2A26D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				40BE395529F1AB7100F2A26D /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		40D7F78929AFA88700611CDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +336,7 @@
 		40F925F229AF508200434F98 /* iTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				40BE395429F1AB5300F2A26D /* Services */,
 				40A7E6ED29EF352E00F52EE2 /* ReusableIteams */,
 				40D7F78D29AFA89A00611CDF /* App */,
 				40D7F78C29AFA89800611CDF /* Core */,
@@ -433,6 +444,7 @@
 				4088B72B29F0835800DDDCCA /* HomeViewModel.swift in Sources */,
 				40A357AB29B1225500931DCD /* LocationSearchView.swift in Sources */,
 				406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */,
+				40BE395629F1AB7100F2A26D /* UserService.swift in Sources */,
 				4055A41D29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift in Sources */,
 				407B0ABE29E8783B00AAC475 /* RideRequestView.swift in Sources */,
 				4088B72929F073BF00DDDCCA /* DeveloperPreview.swift in Sources */,

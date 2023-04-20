@@ -26,7 +26,7 @@ struct iTaxiMapViewRepresentable: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        switch mapState { 
+        switch mapState {
         case .noInput:
             context.coordinator.clearMapViewAndRecenterOnUserLocation()
             context.coordinator.addDriversToMap(homeViewModel.drivers)
@@ -35,7 +35,7 @@ struct iTaxiMapViewRepresentable: UIViewRepresentable {
             break
         case .locationSelected:
             if let coordinate = locationViewModel.selectediTaxiLocation?.coordinate {
-                print("DEBUG: Coordinate is \(coordinate)")
+                //print("DEBUG: Coordinate is \(coordinate)")
                 context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
                 context.coordinator.configurePolyline(withDestinationCoordinate: coordinate)
             }
@@ -93,13 +93,19 @@ extension iTaxiMapViewRepresentable {
         
         
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            print("DEBUG: mapView viewFor called")
+            print("DEBUG: Annotation type: \(type(of: annotation))")
+
             if let annotation = annotation as? DriverAnnotation {
                 let view = MKAnnotationView(annotation: annotation, reuseIdentifier: "driver")
+//                let view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "driver") // Если не работает MKAnnotationView()
                 view.image = UIImage(named: "chevron-sign-to-right")
                 return view
             }
             return nil
         }
+        
+
         
         // MARK: - Helpers
         
@@ -135,6 +141,7 @@ extension iTaxiMapViewRepresentable {
         }
         
         func addDriversToMap(_ drivers: [User]) {
+            
             let annotations = drivers.map({ DriverAnnotation(driver: $0) })
             self.parent.mapView.addAnnotations(annotations)
         }
