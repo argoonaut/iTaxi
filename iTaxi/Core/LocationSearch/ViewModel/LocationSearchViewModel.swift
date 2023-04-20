@@ -23,12 +23,12 @@ class LocationSearchViewModel: NSObject, ObservableObject {
     @Published var pickUpTime: String?
     @Published var dropOffTime: String?
     
+    private let searchCompleter = MKLocalSearchCompleter()
     var queryFragment: String = "" {
         didSet {
             searchCompleter.queryFragment = queryFragment
         }
     }
-    private let searchCompleter = MKLocalSearchCompleter()
     var userLocation: CLLocationCoordinate2D?
     
     // MARK: - Lifecycle

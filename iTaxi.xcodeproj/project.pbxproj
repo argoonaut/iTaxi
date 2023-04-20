@@ -42,6 +42,7 @@
 		40A7E6FF29EF549100F52EE2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A7E6FE29EF549100F52EE2 /* User.swift */; };
 		40BE395629F1AB7100F2A26D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE395529F1AB7100F2A26D /* UserService.swift */; };
 		40BE395829F1B5E200F2A26D /* AcceptTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE395729F1B5E200F2A26D /* AcceptTripView.swift */; };
+		40BE395A29F1BC4100F2A26D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE395929F1BC4100F2A26D /* Trip.swift */; };
 		40CFCA9729D6070B008BCACC /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CFCA9629D6070B008BCACC /* MapViewState.swift */; };
 		40D7F79129AFA96000611CDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79029AFA96000611CDF /* HomeView.swift */; };
 		40D7F79329AFA9D700611CDF /* iTaxiMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */; };
@@ -83,6 +84,7 @@
 		40A7E6FE29EF549100F52EE2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		40BE395529F1AB7100F2A26D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		40BE395729F1B5E200F2A26D /* AcceptTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptTripView.swift; sourceTree = "<group>"; };
+		40BE395929F1BC4100F2A26D /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		40CFCA9629D6070B008BCACC /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
 		40D7F79029AFA96000611CDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		40D7F79229AFA9D700611CDF /* iTaxiMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTaxiMapViewRepresentable.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				40A7E6FE29EF549100F52EE2 /* User.swift */,
 				4088B72629F067EC00DDDCCA /* SavedLocation.swift */,
 				4088B72C29F0918500DDDCCA /* DriverAnnotation.swift */,
+				40BE395929F1BC4100F2A26D /* Trip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				4088B72929F073BF00DDDCCA /* DeveloperPreview.swift in Sources */,
 				4090CE0029EEFC8200E1B4A8 /* Double.swift in Sources */,
 				40BE395829F1B5E200F2A26D /* AcceptTripView.swift in Sources */,
+				40BE395A29F1BC4100F2A26D /* Trip.swift in Sources */,
 				40A7E6EC29EF140A00F52EE2 /* RegistrationView.swift in Sources */,
 				40A7E6FD29EF463100F52EE2 /* AuthViewModel.swift in Sources */,
 				4088B72529F0535B00DDDCCA /* LocationSearchResultsView.swift in Sources */,
