@@ -8,7 +8,8 @@
 import Foundation
 import CoreLocation
 
-struct iTaxiLocation {
+struct iTaxiLocation: Identifiable {
+    let id = NSUUID().uuidString
     let title: String
     let coordinate: CLLocationCoordinate2D
     

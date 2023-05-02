@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401C7A3A2A018F460060BCC7 /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C7A392A018F460060BCC7 /* GeoPoint.swift */; };
 		4055A41B29EFF4D900CAB6C6 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A41A29EFF4D900CAB6C6 /* SideMenuView.swift */; };
 		4055A41D29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A41C29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift */; };
 		4055A41F29EFF8ED00CAB6C6 /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055A41E29EFF8ED00CAB6C6 /* SideMenuOptionView.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401C7A392A018F460060BCC7 /* GeoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
 		4055A41A29EFF4D900CAB6C6 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		4055A41C29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionViewModel.swift; sourceTree = "<group>"; };
 		4055A41E29EFF8ED00CAB6C6 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				4090CDFF29EEFC8200E1B4A8 /* Double.swift */,
 				40A7E6E429EF0F0800F52EE2 /* Color.swift */,
 				4088B72829F073BF00DDDCCA /* DeveloperPreview.swift */,
+				401C7A392A018F460060BCC7 /* GeoPoint.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				4088B72B29F0835800DDDCCA /* HomeViewModel.swift in Sources */,
 				40A357AB29B1225500931DCD /* LocationSearchView.swift in Sources */,
 				406C0DB729AFEA1D00BFA06A /* LocationManager.swift in Sources */,
+				401C7A3A2A018F460060BCC7 /* GeoPoint.swift in Sources */,
 				40BE395629F1AB7100F2A26D /* UserService.swift in Sources */,
 				4055A41D29EFF80000CAB6C6 /* SideMenuOptionViewModel.swift in Sources */,
 				407B0ABE29E8783B00AAC475 /* RideRequestView.swift in Sources */,

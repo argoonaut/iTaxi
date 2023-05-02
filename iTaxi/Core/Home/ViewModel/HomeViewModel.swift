@@ -16,6 +16,7 @@ class HomeViewModel: NSObject, ObservableObject {
     
     // MARK: - Properties
     @Published var drivers = [User]()
+    @Published var trip: Trip?
     private let service = UserService.shared
     private var cancellable = Set<AnyCancellable>()
     private var currentUser: User?
@@ -45,17 +46,6 @@ class HomeViewModel: NSObject, ObservableObject {
     }
     
     // MARK: - User API
-    func fetchDrivers() {
-        Firestore.firestore().collection("users")
-            .whereField("accountType", isEqualTo: AccountType.driver.rawValue)
-            .getDocuments { snapshot, _ in
-                guard let documents = snapshot?.documents else { return }
-                
-                let drivers = documents.compactMap({ try? $0.data(as: User.self) })
-                self.drivers = drivers
-                
-            }
-    }
     
     func fetchUser() {
         service.$user
@@ -76,6 +66,19 @@ class HomeViewModel: NSObject, ObservableObject {
 
 // MARK: - Passenger API
 extension HomeViewModel {
+    
+    func fetchDrivers() {
+        Firestore.firestore().collection("users")
+            .whereField("accountType", isEqualTo: AccountType.driver.rawValue)
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                
+                let drivers = documents.compactMap({ try? $0.data(as: User.self) })
+                self.drivers = drivers
+                
+            }
+    }
+    
     func requestTrip() {
         guard let driver = drivers.first else { return }
         guard let currentUser = currentUser else { return }
@@ -122,7 +125,7 @@ extension HomeViewModel {
                 guard let documents = snapshot?.documents, let document = documents.first else { return }
                 guard let trip = try? document.data(as: Trip.self) else { return }
                 
-                print("DEBUG: Trip request for driver is \(trip)")
+                self.trip = trip
             }
     }
 }
