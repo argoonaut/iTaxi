@@ -28,4 +28,7 @@ struct Trip: Identifiable, Codable {
     
     let tripCost: Double
     
+    var distanceToPassenger: Double
+    var travelTimeToPassenger: Int
+    
 }
